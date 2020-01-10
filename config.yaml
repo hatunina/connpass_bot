@@ -1,0 +1,5 @@
+slack:
+  token:
+  channel: connpass
+params:
+  keyword_or: [不正対策, 不正, 不正決済, Cassandra, SpringBoot]
