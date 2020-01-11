@@ -1,6 +1,6 @@
-from connpass import Connpass
-from slack_bots import SlackBots
-import util
+from src.connpass import Connpass
+from src.slack_bots import SlackBots
+import src.util
 
 
 def main():

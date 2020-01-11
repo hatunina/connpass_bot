@@ -18,4 +18,7 @@ class SlackBots():
             'text': msg
         }
 
-        requests.post(url="https://slack.com/api/chat.postMessage", params=params)
+        res = requests.post(url="https://slack.com/api/chat.postMessage", params=params)
+
+        if res.status_code != 200:
+            raise Exception

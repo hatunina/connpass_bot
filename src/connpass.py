@@ -12,7 +12,10 @@ class Connpass():
         self.params = params
 
     def get_events(self):
-        return requests.get(self.url, params=self.params)
+        res = requests.get(self.url, params=self.params)
+        if res.status_code != 200:
+            raise Exception
+        return res
 
     def check_events(self, events):
         cols = [
